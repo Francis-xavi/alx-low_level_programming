@@ -1,4 +1,4 @@
-lude "main.h"
+#include "main.h"
 /**
  * print_sign - a function that prints the sign of a number
  * @n: number input
@@ -15,11 +15,6 @@ lude "main.h"
 	{
 		_putchar ('0');
 		return (0);
-	}
-	else
-	{
-		_putchar ('-');
-		return (-1);
 	}
 }
 
