@@ -8,10 +8,13 @@
  */
 size_t _strlen(const char *str)
 {
-	size_t length = 0;
+	int i = 1, sum = 0;
+	char pl = s[0];
 
-	while (*str++)
-		length++;
-
-	return (length);
+	while (pl != '\0')
+	{
+		sum++;
+		pl = s[i++];
+	}
+	return (sum);
 }
