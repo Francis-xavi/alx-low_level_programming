@@ -1,5 +1,5 @@
-!<arch>
-cfiles/         0           0     0     644     651       `
+#ifndef MAIN_H
+#define MAIN_H
 
 int _putchar(char c);
 int _islower(int c);
@@ -10,7 +10,7 @@ int _isdigit(int c);
 int _strlen(char *s);
 void _puts(char *s);
 char *_strcpy(char *dest, char *src);
-int _atoi(char *s);
+int _atoi(void);
 char *_strcat(char *dest, char *src);
 char *_strncat(char *dest, char *src, int n);
 char *_strncpy(char *dest, char *src, int n);
@@ -22,24 +22,4 @@ unsigned int _strspn(char *s, char *accept);
 char *_strpbrk(char *s, char *accept);
 char *_strstr(char *haystack, char *needle);
 
-ofiles/         0           0     0     644     222       `
-0-isupper.o
-0-memset.o
-0-strcat.o
-1-isdigit.o
-1-memcpy.o
-1-strncat.o
-100-atoi.o
-2-strchr.o
-2-strlen.o
-2-strncpy.o
-3-islower.o
-3-puts.o
-3-strcmp.o
-3-strspn.o
-4-isalpha.o
-4-strpbrk.o
-5-strstr.o
-6-abs.o
-9-strcpy.o
-_putchar.o
+#endif
